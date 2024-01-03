@@ -1,0 +1,92 @@
+[
+    {
+        "label": "read_file",
+        "kind": 2,
+        "importPath": "AdventofCode.Day 1.Day1",
+        "description": "AdventofCode.Day 1.Day1",
+        "peekOfCode": "def read_file(path):\n    \"\"\"\n    Read the contents of a file and return a list of lines.\n    Args:\n        path (str): The path to the file.\n    Returns:\n        list: A list of lines read from the file.\n    \"\"\"\n    with open(path, 'r') as f:\n        return f.readlines()",
+        "detail": "AdventofCode.Day 1.Day1",
+        "documentation": {}
+    },
+    {
+        "label": "process_line",
+        "kind": 2,
+        "importPath": "AdventofCode.Day 1.Day1",
+        "description": "AdventofCode.Day 1.Day1",
+        "peekOfCode": "def process_line(line):\n    \"\"\"\n    Process a line of text and convert it into a single integer.\n    Args:\n        line (str): The input line to be processed.\n    Returns:\n        int: The combined integer value extracted from the line.\n    \"\"\"\n    text_numbers = ['one', 'two', 'three', 'four',\n                    'five', 'six', 'seven', 'eight', 'nine']",
+        "detail": "AdventofCode.Day 1.Day1",
+        "documentation": {}
+    },
+    {
+        "label": "process",
+        "kind": 2,
+        "importPath": "AdventofCode.Day 1.Day1",
+        "description": "AdventofCode.Day 1.Day1",
+        "peekOfCode": "def process(read_file, process_line):\n    \"\"\"\n    Process the lines from a file using a given function.\n    Args:\n        read_file (function): A function that reads the file and returns a list of lines.\n        process_line (function): A function that processes a single line and returns a value.\n    Returns:\n        None\n    \"\"\"\n    lines = read_file('input.txt')",
+        "detail": "AdventofCode.Day 1.Day1",
+        "documentation": {}
+    },
+    {
+        "label": "digits",
+        "kind": 5,
+        "importPath": "AdventofCode.Day 1.Day1",
+        "description": "AdventofCode.Day 1.Day1",
+        "peekOfCode": "digits = {\n    'one': 1,\n    'two': 2,\n    'three': 3,\n    'four': 4,\n    'five': 5,\n    'six': 6,\n    'seven': 7,\n    'eight': 8,\n    'nine': 9",
+        "detail": "AdventofCode.Day 1.Day1",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "AdventofCode.Day 1.Day1",
+        "description": "AdventofCode.Day 1.Day1",
+        "peekOfCode": "DEBUG = False\ndef process_line(line):\n    \"\"\"\n    Process a line of text and convert it into a single integer.\n    Args:\n        line (str): The input line to be processed.\n    Returns:\n        int: The combined integer value extracted from the line.\n    \"\"\"\n    text_numbers = ['one', 'two', 'three', 'four',",
+        "detail": "AdventofCode.Day 1.Day1",
+        "documentation": {}
+    },
+    {
+        "label": "GAME",
+        "kind": 6,
+        "importPath": "AdventofCode.Day 2.Day 2",
+        "description": "AdventofCode.Day 2.Day 2",
+        "peekOfCode": "class GAME:\n    def __init__(self, input):\n        # INPUT IS A LIST OF LISTS\n        # input.split(' ')\n        self.id = input.split(':')[0]\n        self.SETS = []\n        self.create_sets(input.split(':')[1].split(';'))\n    def create_sets(self, inputSets):\n        SET = []\n        for i in range(0, len(inputSets)):",
+        "detail": "AdventofCode.Day 2.Day 2",
+        "documentation": {}
+    },
+    {
+        "label": "read_file",
+        "kind": 2,
+        "importPath": "AdventofCode.Day 2.Day 2",
+        "description": "AdventofCode.Day 2.Day 2",
+        "peekOfCode": "def read_file(path):\n    \"\"\"\n    Read the contents of a file and return a list of lines.\n    Args:\n        path (str): The path to the file.\n    Returns:\n        list: A list of lines read from the file.\n    \"\"\"\n    with open(path, 'r') as f:\n        return f.readlines()",
+        "detail": "AdventofCode.Day 2.Day 2",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "AdventofCode.Day 2.Day 2",
+        "description": "AdventofCode.Day 2.Day 2",
+        "peekOfCode": "DEBUG = False\nclass GAME:\n    def __init__(self, input):\n        # INPUT IS A LIST OF LISTS\n        # input.split(' ')\n        self.id = input.split(':')[0]\n        self.SETS = []\n        self.create_sets(input.split(':')[1].split(';'))\n    def create_sets(self, inputSets):\n        SET = []",
+        "detail": "AdventofCode.Day 2.Day 2",
+        "documentation": {}
+    },
+    {
+        "label": "GAMES",
+        "kind": 5,
+        "importPath": "AdventofCode.Day 2.Day 2",
+        "description": "AdventofCode.Day 2.Day 2",
+        "peekOfCode": "GAMES = []\ninput = read_file('input.txt')\nprint(f'GAMES: {GAMES}')\nfor line in input:\n    GAMES.append(GAME(line))\n    print(f'Game: {line}')\n    CurrentGame = GAME(line)\n    print(f'CurrentGame: {CurrentGame}')\n    print(f'CurrentGame.id: {CurrentGame.id}')\n    print(f'CurrentGame.SETS: {CurrentGame.SETS}')",
+        "detail": "AdventofCode.Day 2.Day 2",
+        "documentation": {}
+    },
+    {
+        "label": "input",
+        "kind": 5,
+        "importPath": "AdventofCode.Day 2.Day 2",
+        "description": "AdventofCode.Day 2.Day 2",
+        "peekOfCode": "input = read_file('input.txt')\nprint(f'GAMES: {GAMES}')\nfor line in input:\n    GAMES.append(GAME(line))\n    print(f'Game: {line}')\n    CurrentGame = GAME(line)\n    print(f'CurrentGame: {CurrentGame}')\n    print(f'CurrentGame.id: {CurrentGame.id}')\n    print(f'CurrentGame.SETS: {CurrentGame.SETS}')\n    sets = CurrentGame.get_sets()",
+        "detail": "AdventofCode.Day 2.Day 2",
+        "documentation": {}
+    }
+]
