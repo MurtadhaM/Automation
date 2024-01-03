@@ -14,7 +14,7 @@ chown -R 1000:1000 letsencrypt
 ---
 
 
-export CF_Token="0Yzj6IRAxJni8ZV95Szcrl_aR5tn_0E71MeFfGVQ"
+export CF_Token=""
 export CF_Zone_ID="4db4340ec56d4502efcc5f298f66768b"
 export CF_Account_ID="929ec37202defab79c90cb35c96b348f"
 
@@ -35,7 +35,7 @@ sudo python3 -m pip install -U pyOpenSSL cryptography
 mkdir -p ~/.secrets/certbot
 sudo tee /etc/letsencrypt/dnscloudflare.ini > /dev/null <<EOT
 # Cloudflare API token used by Certbot
-dns_cloudflare_api_token = 0Yzj6IRAxJni8ZV95Szcrl_aR5tn_0E71MeFfGVQ
+dns_cloudflare_api_token = 
 EOT 
 
 
