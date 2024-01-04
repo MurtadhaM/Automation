@@ -1,11 +1,13 @@
-### Nginx Proxy Manager - Setup & Configuration
 
-- [x] VARIABLES FROM THE DASHBOARD i.e https://dash.cloudflare.com/929ec37202defab79c90cb35c96b348f/findasnake.com
 
 ---
 
+- [x] SETUP Permissions and Disabling SELinux
 
 ```bash
+echo "SELINUX=disabled" > /etc/selinux/config
+setenforce 0
+# Create the directories for the data and letsencrypt
 mkdir data 
 mkdir letsencrypt
 chmod 777 data
@@ -19,22 +21,25 @@ chown -R 1000:1000 letsencrypt
 
 ```bash
 
-export CF_Token=""
-export CF_Zone_ID="4db4340ec56d4502efcc5f298f66768b"
-export CF_Account_ID="929ec37202defab79c90cb35c96b348f"
-```
-- [x] Make Web Request
+export CF_Token= "" # API Token from Cloudflare
+export CF_Zone_ID =""
+export # Wont need this 
+CF_Account_ID="" # Wont need this
+````
+
+- [x] Podman Compose File
+
 
 ```bash
-
 curl https://get.acme.sh | sh -s email=my@findasnake.com
 /root/.acme.sh/acme.sh --issue --dns dns_cf -d fuck.findasnake.com
 
 ```
----
+
 - [x] Dependencies 
 
 - Ubuntu / Debian
+
 ```bash
 sudo apt update
 sudo apt install vim certbot  python3-certbot-dns-cloudflare python3-pip
@@ -84,10 +89,11 @@ services:
       - ./data:/data
       - ./letsencrypt:/etc/letsencrypt
 ```
+
 - [x] Docker Compose
+
 ```bash
 podmon-compose up -d
-
 ```
 
 
