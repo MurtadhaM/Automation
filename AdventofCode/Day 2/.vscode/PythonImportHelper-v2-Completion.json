@@ -1,0 +1,47 @@
+[
+    {
+        "label": "GAME",
+        "kind": 6,
+        "importPath": "Day 2",
+        "description": "Day 2",
+        "peekOfCode": "class GAME:\n    def __init__(self, input):\n        # INPUT IS A LIST OF LISTS\n        # input.split(' ')\n        self.id = input.split(':')[0]\n        self.SETS = []\n        self.create_sets(input.split(':')[1].split(';'))\n    def create_sets(self, inputSets):\n        SET = []\n        for i in range(0, len(inputSets)):",
+        "detail": "Day 2",
+        "documentation": {}
+    },
+    {
+        "label": "read_file",
+        "kind": 2,
+        "importPath": "Day 2",
+        "description": "Day 2",
+        "peekOfCode": "def read_file(path):\n    \"\"\"\n    Read the contents of a file and return a list of lines.\n    Args:\n        path (str): The path to the file.\n    Returns:\n        list: A list of lines read from the file.\n    \"\"\"\n    with open(path, 'r') as f:\n        return f.readlines()",
+        "detail": "Day 2",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "Day 2",
+        "description": "Day 2",
+        "peekOfCode": "DEBUG = False\nclass GAME:\n    def __init__(self, input):\n        # INPUT IS A LIST OF LISTS\n        # input.split(' ')\n        self.id = input.split(':')[0]\n        self.SETS = []\n        self.create_sets(input.split(':')[1].split(';'))\n    def create_sets(self, inputSets):\n        SET = []",
+        "detail": "Day 2",
+        "documentation": {}
+    },
+    {
+        "label": "GAMES",
+        "kind": 5,
+        "importPath": "Day 2",
+        "description": "Day 2",
+        "peekOfCode": "GAMES = []\ninput = read_file('input.txt')\nprint(f'GAMES: {GAMES}')\nfor line in input:\n    GAMES.append(GAME(line))\n    print(f'Game: {line}')\n    CurrentGame = GAME(line)\n    print(f'CurrentGame: {CurrentGame}')\n    print(f'CurrentGame.id: {CurrentGame.id}')\n    print(f'CurrentGame.SETS: {CurrentGame.SETS}')",
+        "detail": "Day 2",
+        "documentation": {}
+    },
+    {
+        "label": "input",
+        "kind": 5,
+        "importPath": "Day 2",
+        "description": "Day 2",
+        "peekOfCode": "input = read_file('input.txt')\nprint(f'GAMES: {GAMES}')\nfor line in input:\n    GAMES.append(GAME(line))\n    print(f'Game: {line}')\n    CurrentGame = GAME(line)\n    print(f'CurrentGame: {CurrentGame}')\n    print(f'CurrentGame.id: {CurrentGame.id}')\n    print(f'CurrentGame.SETS: {CurrentGame.SETS}')\n    sets = CurrentGame.get_sets()",
+        "detail": "Day 2",
+        "documentation": {}
+    }
+]
