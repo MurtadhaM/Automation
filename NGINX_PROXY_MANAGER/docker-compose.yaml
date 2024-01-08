@@ -1,0 +1,433 @@
+        "Id": "27b3e4961f08bd120631f89e3516c5315e0a939c0486b4e8442a79df2d5f2bd7",
+        "Digest": "sha256:e63000388eae7a76ddfcd6a97b58521e52ce332ae7c16fa3bf2e62544dabc838",
+        "RepoTags": [
+            "docker.io/jc21/nginx-proxy-manager:latest"
+        ],
+        "RepoDigests": [
+            "docker.io/jc21/nginx-proxy-manager@sha256:2ebfe74e4a6a01900e4f1b728065fdfcdd6859128eb04671ccaeb235d0ae892e",
+            "docker.io/jc21/nginx-proxy-manager@sha256:e63000388eae7a76ddfcd6a97b58521e52ce332ae7c16fa3bf2e62544dabc838"
+        ],
+        "Parent": "",
+        "Comment": "",
+        "Created": "2024-01-08T00:23:32.860034571Z",
+        "Config": {
+            "ExposedPorts": {
+                "443/tcp": {},
+                "80/tcp": {},
+                "81/tcp": {}
+            },
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt",
+                "OPENRESTY_VERSION=1.21.4.2",
+                "CROWDSEC_OPENRESTY_BOUNCER_VERSION=0.1.7",
+                "CURL_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt",
+                "SUPPRESS_NO_CONFIG_WARNING=1",
+                "S6_BEHAVIOUR_IF_STAGE2_FAILS=1",
+                "S6_CMD_WAIT_FOR_SERVICES_MAXTIME=0",
+                "S6_FIX_ATTRS_HIDDEN=1",
+                "S6_KILL_FINISH_MAXTIME=10000",
+                "S6_VERBOSITY=1",
+                "NODE_ENV=production",
+                "NPM_BUILD_VERSION=2.10.4",
+                "NPM_BUILD_COMMIT=1c498f8",
+                "NPM_BUILD_DATE=2024-01-08 00:21:20 UTC"
+            ],
+            "Entrypoint": [
+                "/init"
+            ],
+            "Volumes": {
+                "/data": {},
+                "/etc/letsencrypt": {}
+            },
+            "WorkingDir": "/app",
+            "Labels": {
+                "maintainer": "Jamie Curnow \u003cjc@jc21.com\u003e",
+                "org.label-schema.cmd": "docker run --rm -ti jc21/nginx-proxy-manager:latest",
+                "org.label-schema.description": "Docker container for managing Nginx proxy hosts with a simple, powerful interface ",
+                "org.label-schema.license": "MIT",
+                "org.label-schema.name": "nginx-proxy-manager",
+                "org.label-schema.schema-version": "1.0",
+                "org.label-schema.url": "https://github.com/jc21/nginx-proxy-manager",
+                "org.label-schema.vcs-url": "https://github.com/jc21/nginx-proxy-manager.git"
+            }
+        },
+        "Version": "",
+        "Author": "",
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 871764797,
+        "VirtualSize": 871764797,
+        "GraphDriver": {
+            "Name": "overlay",
+            "Data": {
+                "LowerDir": "/var/lib/containers/storage/overlay/96676fc78fb8d27fa774d9c0af994f2dc3897ffb1c7e767e9c13bebba9787378/diff:/var/lib/containers/storage/overlay/4acbdea00fc2aef8c6adbd484b86e03ac75e0df8e45c584debda6b7d6571e4d8/diff:/var/lib/containers/storage/overlay/b1a85bd729defef104fa38ac713a9919731c6bf3491cd7d46023901b4f73f1e8/diff:/var/lib/containers/storage/overlay/b26145d401159bfc9382c3c4d49d35ad49cf4c2c828bc69a8f290c10e336ce68/diff:/var/lib/containers/storage/overlay/b7bc4ea6ac627f75a20cab5437230a061150f784804997d6146e0704d15b936f/diff:/var/lib/containers/storage/overlay/e5955b0a892a34a3772e9781e7f82a801a5b40acfc520f420656ca4bd8de88f7/diff:/var/lib/containers/storage/overlay/cdf7fed1ae88875aa392c630c316a4c30d176885ef691c282f85541c684ec054/diff:/var/lib/containers/storage/overlay/638a577dd81c758e7fa5db00b566b4ab5befe431b46f3d3f97f53d2b917146d6/diff:/var/lib/containers/storage/overlay/727cc688eda5bc9c2b1376315ccd448b35ac668f3137452aa035ede2825e54f6/diff:/var/lib/containers/storage/overlay/4354d45ff32792f22c61dc9bbd0f245b3c2f712fcd9369b5b67c8477edbe6207/diff:/var/lib/containers/storage/overlay/fa0bb63d04cd4530cfe23e4fdcb1a3dfa8972f9e2bf187c2c506318793ed9986/diff:/var/lib/containers/storage/overlay/73f123fe00a9b6afd7a0620a2db8eaab1896b8c674a213345cf1e32c088187ab/diff:/var/lib/containers/storage/overlay/e87fbcdd7e04064b2b33d206c393162c8c0c033dfca7505f384b941fb0f4a8b6/diff:/var/lib/containers/storage/overlay/b0b6c9803720474999f456518d7f5ebfeb4af9c557b318b5a6e0484555208a7a/diff:/var/lib/containers/storage/overlay/ee7a10a9e34d1b4adc3b869a31734cea22f250365a63978c0817b3f8fe70ac68/diff:/var/lib/containers/storage/overlay/6fcea4d0ab5b16b18716471cdc11906778e4a04abd90edfcce0a50dd2b299671/diff:/var/lib/containers/storage/overlay/eb366bb1f20e01663eeff84dd66d3367fe558b148c8462f1242aae90007a2d9e/diff:/var/lib/containers/storage/overlay/4b25decc835f358c7a445ad47cd8a7b775cfcb9f688edab0a5f7c3f68a1840bd/diff:/var/lib/containers/storage/overlay/ff3ebc8f67b4e3ea00adc8a10aecc6ded9ddf83e50ac10220ade6e8c3a241a8e/diff:/var/lib/containers/storage/overlay/f947874b2770f243e73bdda3876a3fd9d623f0b4e3f8a80961d615d6da83c261/diff:/var/lib/containers/storage/overlay/38c7a352f340140bb296426f4df5723d80c2b1bbf497f236a1da5bc2d104df9c/diff:/var/lib/containers/storage/overlay/c4a7b2440e45e7a7c9e5f94af2a2e1ba06b1bc3f9ee5cad04138bd4be9207f4c/diff:/var/lib/containers/storage/overlay/fad2750476da9f49b4fca2314ca32b30d9c1ea47777ee3a1c3fab409628d8ecf/diff:/var/lib/containers/storage/overlay/b180d1c2dd8e4b149a621bbed07a50326ad04c85588473e7fbf389334a6bed88/diff:/var/lib/containers/storage/overlay/a843991aed1ee616800945b393d5f14ce6de1585a1273bc39452779990eb2ee7/diff:/var/lib/containers/storage/overlay/06f31aa4416ef5dd7aa16a994de3dbd2b4578b89415825642c4512a947bed060/diff:/var/lib/containers/storage/overlay/db0434ecac800285f66de8baebdda97ddc19221786874da5d0404150607bfafe/diff:/var/lib/containers/storage/overlay/9a3f00c09bfa2d31a4c3b778669ec9c666c7ac8053b077480dc7556bc7853f0f/diff:/var/lib/containers/storage/overlay/214bc883a129d7a6b5b34bba0a1f0a7df6c929fe532342a0e03bda75f6f3360c/diff:/var/lib/containers/storage/overlay/af166d63fa8011439cbf41fd985ab29a79bd6bf0cee47b8718700563e5140591/diff:/var/lib/containers/storage/overlay/03e2e9c65a68e348351e04e97bde77712441877ffa522436dbebb50b17719dee/diff:/var/lib/containers/storage/overlay/d2897ab29b0ec0aa813838250f2a2d47cbb5529d09573b5a296144cf75117eb7/diff",
+                "UpperDir": "/var/lib/containers/storage/overlay/8806e48fff026d4842a43526233e3b1d4efda9047854c90cced5fd4bf66a6f95/diff",
+                "WorkDir": "/var/lib/containers/storage/overlay/8806e48fff026d4842a43526233e3b1d4efda9047854c90cced5fd4bf66a6f95/work"
+            }
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:d2897ab29b0ec0aa813838250f2a2d47cbb5529d09573b5a296144cf75117eb7",
+                "sha256:4c81bbed1ee75f91b300eccd097dd0f191a33838a83c9ae886f4ce3b4496582f",
+                "sha256:6d08a5a428ac551d5f7db0d0d5485ae59ff71dab88edbd80a8bc239c2b083427",
+                "sha256:6a862aa5255a86c19d823c5a35361fce101b5c45be99582277ab388289fb02cb",
+                "sha256:0b8831af28e494a8b3aacbd58ba3ff874f1f863bae110d22cdfa9b1d5ebc0ea4",
+                "sha256:e4be01baaddd8f149f21bbfb75a86806262d4d9bc8d04bd0ee50e943ad61b399",
+                "sha256:b197c514f1b7915ae2fe10fe51e0f73cdc5512d06696556b314f81ee1c437f10",
+                "sha256:cd079c705905943a02d5e60178d8b7bf0b5b45db6a431bfcc2d7cdffdae0501d",
+                "sha256:522cb380f7c24ed8c72d0cd06427589849e2391ed095c5ceb2036e3d4fda7a1c",
+                "sha256:416a9e4dbfc66ffbe23febb47ea40d314c89b530292f38c998741fd9a460025f",
+                "sha256:279ea7f78002c20fb492aaef5ab6761710fa9f2e8bd8dbe1c8691ad508c90d2d",
+                "sha256:807aaf683906943a4c586bd2fe3e39c231db95f81877ad04c6fb849f0f812ecc",
+                "sha256:efe03cde4715c9d939204fd0291bf32b85f02d740f54163b7bedd0bbaff14ce0",
+                "sha256:6ff9786dc57b2781b6b2fc251fc5745542866fa0d73108669fbac67ccbf30a2c",
+                "sha256:fb849fd9bfee9f41db3ef9033b844e32557bc3b4bf41e3b25f31c86bc5b70482",
+                "sha256:3e35cf62144c39b10232e340cd1b5ccf200d07ef203e9bae227f4880fb5c97a1",
+                "sha256:30d98974a427f9db97c8e00305c82bde0ed958549d711e0f6eafb50f385b7fbf",
+                "sha256:c084d6b714167032a043f9b367badfb2c7cfeb0682b76b1c3a8dc67a0b911758",
+                "sha256:0b2ccd529b993813c027ab6046aaa389cbadd6349de0c149bbe8516935c83bf8",
+                "sha256:b9134f5086bdc10afa777b48dc0266489133635451092d37f0cc319fcc9b31ac",
+                "sha256:32cd2f14d74746e78ed97be5bb038caab68bcd4eebcf9cf0f5bbc4b348cbd77c",
+                "sha256:2338ac9ea83ae12600c5aa5af894e027708948398b4ba2bc0e99c1359d14ff1e",
+                "sha256:44449a211413461e55ae2ee585e0b4532ca071f8dbe0b18dca83fb0ba5e25c12",
+                "sha256:f8301298dfd24dc4caf250aa98da61e900e9484e1421f7da01e0be8949625ef0",
+                "sha256:942cc3e872a47e2e4d155a988c9a42d8920b959686f8a2d1173d2d9f8824c4d6",
+                "sha256:63f59a54d4b25fa64748c828ba1952c61ef04a9a4565c2afef7c27c0f78962f3",
+                "sha256:f728376c6b50c5f42b9d4c82ab997c4dc2efce123bca2dd52e395d6818467930",
+                "sha256:21f884a478e0fd92bd2c011e419135853dd9cd5115857344ae0b88bb07ec1d20",
+                "sha256:485387d8d6ebc3f297ec325f9f377c3d0644ebe8957d77ea8fd7941729bc7772",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                "sha256:704cb8d819b1a39f8289f3376cfc68f9e5a28d3ae9524c5758a84cadea544b1a",
+                "sha256:565f84b7ba7e18a3a8d50ed3ca5596b2208d9a6e0482d19faa7c6e0cb2dcb968",
+                "sha256:8c7ee2b849ea6a8b9b5c98fc52cc044d6f7a220478161cb93c49ef28fc863433"
+            ]
+        },
+        "Labels": {
+            "maintainer": "Jamie Curnow \u003cjc@jc21.com\u003e",
+            "org.label-schema.cmd": "docker run --rm -ti jc21/nginx-proxy-manager:latest",
+            "org.label-schema.description": "Docker container for managing Nginx proxy hosts with a simple, powerful interface ",
+            "org.label-schema.license": "MIT",
+            "org.label-schema.name": "nginx-proxy-manager",
+            "org.label-schema.schema-version": "1.0",
+            "org.label-schema.url": "https://github.com/jc21/nginx-proxy-manager",
+            "org.label-schema.vcs-url": "https://github.com/jc21/nginx-proxy-manager.git"
+        },
+        "Annotations": {},
+        "ManifestType": "application/vnd.oci.image.manifest.v1+json",
+        "User": "",
+        "History": [
+            {
+                "created": "2023-12-19T01:21:12.78061662Z",
+                "created_by": "/bin/sh -c #(nop) ADD file:ae5c65eea20f7ddcf93a0aa255b6a08a906ac1a1a65cd2c4b5d1529bf9f6eaf8 in / "
+            },
+            {
+                "created": "2023-12-19T01:21:13.089341858Z",
+                "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                "empty_layer": true
+            },
+            {
+                "created": "2024-01-07T15:04:46.371616Z",
+                "created_by": "LABEL maintainer=Jamie Curnow \u003cjc@jc21.com\u003e",
+                "comment": "buildkit.dockerfile.v0",
+                "empty_layer": true
+            },
+            {
+                "created": "2024-01-07T15:04:46.371616Z",
+                "created_by": "SHELL [/bin/bash -o pipefail -c]",
+                "comment": "buildkit.dockerfile.v0",
+                "empty_layer": true
+            },
+            {
+                "created": "2024-01-07T15:04:46.371616Z",
+                "created_by": "ARG TARGETPLATFORM",
+                "comment": "buildkit.dockerfile.v0",
+                "empty_layer": true
+            },
+            {
+                "created": "2024-01-07T15:04:46.371616Z",
+                "created_by": "RUN |1 TARGETPLATFORM=linux/amd64 /bin/bash -o pipefail -c echo \"Base: debian:buster-slim, ${TARGETPLATFORM:-linux/amd64}\" \u003e /built-for-arch # buildkit",
+                "comment": "buildkit.dockerfile.v0"
+            },
+            {
+                "created": "2024-01-07T15:05:04.694206615Z",
+                "created_by": "RUN |1 TARGETPLATFORM=linux/amd64 /bin/bash -o pipefail -c apt-get update \t\u0026\u0026 apt-get install -y --no-install-recommends \tapache2-utils \tca-certificates \tcurl \tfiglet \tjq \tlibncurses6 \tlibpcre3 \tlibreadline7 \topenssl \tperl \ttzdata \tunzip \tzlib1g \tgettext \twget \txz-utils \t\u0026\u0026 apt-get clean \t\u0026\u0026 rm -rf /var/lib/apt/lists/* \t\u0026\u0026 rm -rf /var/cache/* /var/log/* /tmp/* /var/lib/dpkg/status-old # buildkit",
+                "comment": "buildkit.dockerfile.v0"
+            },
+            {
+                "created": "2024-01-07T15:05:12.132961974Z",
+                "created_by": "COPY ./files/.bashrc /root/.bashrc # buildkit",
+                "comment": "buildkit.dockerfile.v0"
+            },
+            {
+                "created": "2024-01-07T15:06:43.028554561Z",
+                "created_by": "COPY /tmp/lua /tmp/lua # buildkit",
+                "comment": "buildkit.dockerfile.v0"
+            },
+            {
+                "created": "2024-01-07T15:06:43.599622938Z",
+                "created_by": "COPY /tmp/luarocks /tmp/luarocks # buildkit",
+                "comment": "buildkit.dockerfile.v0"
+            },
+            {
+                "created": "2024-01-07T15:06:43.664138233Z",
+                "created_by": "COPY ./scripts/install-lua /tmp/install-lua # buildkit",
+                "comment": "buildkit.dockerfile.v0"
+            },
+            {
+                "created": "2024-01-07T15:06:43.899404122Z",
+                "created_by": "COPY /tmp/openresty /tmp/openresty # buildkit",
+                "comment": "buildkit.dockerfile.v0"
+            },
+            {
+                "created": "2024-01-07T15:06:43.938957237Z",
+                "created_by": "COPY ./scripts/install-openresty /tmp/install-openresty # buildkit",
+                "comment": "buildkit.dockerfile.v0"
+            },
+            {
+                "created": "2024-01-07T15:06:43.954106497Z",
+                "created_by": "COPY ./scripts/install-crowdsec_openresty_bouncer /tmp/install-crowdsec_openresty_bouncer # buildkit",
+                "comment": "buildkit.dockerfile.v0"
+            },
+            {
+                "created": "2024-01-07T15:06:43.954106497Z",
+                "created_by": "ARG OPENRESTY_VERSION",
+                "comment": "buildkit.dockerfile.v0",
+                "empty_layer": true
+            },
+            {
+                "created": "2024-01-07T15:06:43.954106497Z",
+                "created_by": "ARG CROWDSEC_OPENRESTY_BOUNCER_VERSION",
+                "comment": "buildkit.dockerfile.v0",
+                "empty_layer": true
+            },
+            {
+                "created": "2024-01-07T15:06:43.954106497Z",
+                "created_by": "ENV SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt OPENRESTY_VERSION=1.21.4.2 CROWDSEC_OPENRESTY_BOUNCER_VERSION=0.1.7",
+                "comment": "buildkit.dockerfile.v0",
+                "empty_layer": true
+            },
+            {
+                "created": "2024-01-07T15:07:08.064947361Z",
+                "created_by": "RUN |3 TARGETPLATFORM=linux/amd64 OPENRESTY_VERSION=1.21.4.2 CROWDSEC_OPENRESTY_BOUNCER_VERSION=0.1.7 /bin/bash -o pipefail -c apt-get update \t\u0026\u0026 apt-get install -y gcc make socat git \t\u0026\u0026 /tmp/install-lua \t\u0026\u0026 /tmp/install-openresty \t\u0026\u0026 apt-get remove -y make gcc git wget gettext \t\u0026\u0026 apt-get autoremove -y \t\u0026\u0026 apt-get clean \t\u0026\u0026 rm -rf /var/lib/apt/lists/* \t\u0026\u0026 rm -rf /var/cache/* /var/log/* /tmp/* /var/lib/dpkg/status-old # buildkit",
+                "comment": "buildkit.dockerfile.v0"
+            },
+            {
+                "created": "2024-01-07T15:07:08.064947361Z",
+                "created_by": "LABEL org.label-schema.schema-version=1.0 org.label-schema.license=MIT org.label-schema.name=nginx-full org.label-schema.description=A base image for use by Nginx Proxy Manager org.label-schema.url=https://github.com/nginxproxymanager/docker-nginx-full org.label-schema.vcs-url=https://github.com/nginxproxymanager/docker-nginx-full.git org.label-schema.cmd=docker run --rm -ti jc21/nginx-full:latest",
+                "comment": "buildkit.dockerfile.v0",
+                "empty_layer": true
+            },
+            {
+                "created": "2024-01-07T15:29:33.72787153Z",
+                "created_by": "LABEL maintainer=Jamie Curnow \u003cjc@jc21.com\u003e",
+                "comment": "buildkit.dockerfile.v0",
+                "empty_layer": true
+            },
+            {
+                "created": "2024-01-07T15:29:33.72787153Z",
+                "created_by": "ARG TARGETPLATFORM",
+                "comment": "buildkit.dockerfile.v0",
+                "empty_layer": true
+            },
+            {
+                "created": "2024-01-07T15:29:33.72787153Z",
+                "created_by": "RUN |1 TARGETPLATFORM=linux/amd64 /bin/bash -o pipefail -c echo \"Certbot: jc21/nginx-full:${BASE_TAG:-latest}, ${TARGETPLATFORM:-linux/amd64}\" \u003e\u003e /built-for-arch # buildkit",
+                "comment": "buildkit.dockerfile.v0"
+            },
+            {
+                "created": "2024-01-07T15:29:33.745799604Z",
+                "created_by": "COPY scripts/install-cert-prune /tmp/install-cert-prune # buildkit",
+                "comment": "buildkit.dockerfile.v0"
+            },
+            {
+                "created": "2024-01-07T15:29:37.428437895Z",
+                "created_by": "RUN |1 TARGETPLATFORM=linux/amd64 /bin/bash -o pipefail -c /tmp/install-cert-prune \"${TARGETPLATFORM:-linux/amd64}\" \u0026\u0026 rm -f /tmp/install-cert-prune # buildkit",
+                "comment": "buildkit.dockerfile.v0"
+            },
+            {
+                "created": "2024-01-07T15:29:49.625172786Z",
+                "created_by": "RUN |1 TARGETPLATFORM=linux/amd64 /bin/bash -o pipefail -c apt-get update \t\u0026\u0026 apt-get install -y --no-install-recommends \tpython3 \tpython3-distutils \tpython3-venv \t\u0026\u0026 apt-get clean \t\u0026\u0026 rm -rf /var/lib/apt/lists/* # buildkit",
+                "comment": "buildkit.dockerfile.v0"
+            },
+            {
+                "created": "2024-01-07T15:29:49.647940715Z",
+                "created_by": "COPY ./files/.bashrc.certbot /root/.bashrc # buildkit",
+                "comment": "buildkit.dockerfile.v0"
+            },
+            {
+                "created": "2024-01-07T15:31:02.127775607Z",
+                "created_by": "COPY /opt/certbot /opt/certbot # buildkit",
+                "comment": "buildkit.dockerfile.v0"
+            },
+            {
+                "created": "2024-01-07T15:31:05.655236598Z",
+                "created_by": "RUN |1 TARGETPLATFORM=linux/amd64 /bin/bash -o pipefail -c curl -L 'https://bootstrap.pypa.io/get-pip.py' | python3 \t\u0026\u0026 python3 -m venv /opt/certbot/ \t\u0026\u0026 sed -i 's/include-system-site-packages = false/include-system-site-packages = true/g' -i /opt/certbot/pyvenv.cfg \t\u0026\u0026 ln -s /opt/certbot/bin/certbot /usr/bin/certbot # buildkit",
+                "comment": "buildkit.dockerfile.v0"
+            },
+            {
+                "created": "2024-01-07T15:31:05.655236598Z",
+                "created_by": "LABEL org.label-schema.cmd=docker run --rm -ti jc21/nginx-full:certbot",
+                "comment": "buildkit.dockerfile.v0",
+                "empty_layer": true
+            },
+            {
+                "created": "2024-01-07T15:54:55.961608031Z",
+                "created_by": "LABEL maintainer=Jamie Curnow \u003cjc@jc21.com\u003e",
+                "comment": "buildkit.dockerfile.v0",
+                "empty_layer": true
+            },
+            {
+                "created": "2024-01-07T15:54:55.961608031Z",
+                "created_by": "ARG TARGETPLATFORM",
+                "comment": "buildkit.dockerfile.v0",
+                "empty_layer": true
+            },
+            {
+                "created": "2024-01-07T15:54:55.961608031Z",
+                "created_by": "RUN |1 TARGETPLATFORM=linux/amd64 /bin/bash -o pipefail -c echo \"Node: jc21/nginx-full:${BASE_TAG:-certbot}, ${TARGETPLATFORM:-linux/amd64}\" \u003e\u003e /built-for-arch # buildkit",
+                "comment": "buildkit.dockerfile.v0"
+            },
+            {
+                "created": "2024-01-07T15:54:55.961608031Z",
+                "created_by": "ENV CURL_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt",
+                "comment": "buildkit.dockerfile.v0",
+                "empty_layer": true
+            },
+            {
+                "created": "2024-01-07T15:56:24.19041161Z",
+                "created_by": "RUN |1 TARGETPLATFORM=linux/amd64 /bin/bash -o pipefail -c curl -fsSL https://deb.nodesource.com/setup_16.x | bash - \t\u0026\u0026 apt-get update \t\u0026\u0026 apt-get install -y gcc make g++ git nodejs \t\u0026\u0026 apt-get clean \t\u0026\u0026 rm -rf /var/lib/apt/lists/* \t\u0026\u0026 npm install -g yarn \t\u0026\u0026 ln -s /usr/bin/python3 /usr/bin/python # buildkit",
+                "comment": "buildkit.dockerfile.v0"
+            },
+            {
+                "created": "2024-01-07T15:56:24.244949844Z",
+                "created_by": "COPY ./files/.bashrc.certbot-node /root/.bashrc # buildkit",
+                "comment": "buildkit.dockerfile.v0"
+            },
+            {
+                "created": "2024-01-07T15:56:24.273806875Z",
+                "created_by": "COPY ./files/test.js /tmp/test.js # buildkit",
+                "comment": "buildkit.dockerfile.v0"
+            },
+            {
+                "created": "2024-01-07T15:56:24.460348234Z",
+                "created_by": "RUN |1 TARGETPLATFORM=linux/amd64 /bin/bash -o pipefail -c node /tmp/test.js \t\u0026\u0026 rm -f /tmp/test.js # buildkit",
+                "comment": "buildkit.dockerfile.v0"
+            },
+            {
+                "created": "2024-01-07T15:56:24.460348234Z",
+                "created_by": "LABEL org.label-schema.cmd=docker run --rm -ti jc21/nginx-full:certbot-node",
+                "comment": "buildkit.dockerfile.v0",
+                "empty_layer": true
+            },
+            {
+                "created": "2024-01-08T00:23:18.037537478Z",
+                "created_by": "ARG TARGETPLATFORM",
+                "comment": "buildkit.dockerfile.v0",
+                "empty_layer": true
+            },
+            {
+                "created": "2024-01-08T00:23:18.037537478Z",
+                "created_by": "ARG BUILD_VERSION",
+                "comment": "buildkit.dockerfile.v0",
+                "empty_layer": true
+            },
+            {
+                "created": "2024-01-08T00:23:18.037537478Z",
+                "created_by": "ARG BUILD_COMMIT",
+                "comment": "buildkit.dockerfile.v0",
+                "empty_layer": true
+            },
+            {
+                "created": "2024-01-08T00:23:18.037537478Z",
+                "created_by": "ARG BUILD_DATE",
+                "comment": "buildkit.dockerfile.v0",
+                "empty_layer": true
+            },
+            {
+                "created": "2024-01-08T00:23:18.037537478Z",
+                "created_by": "ENV SUPPRESS_NO_CONFIG_WARNING=1 S6_BEHAVIOUR_IF_STAGE2_FAILS=1 S6_CMD_WAIT_FOR_SERVICES_MAXTIME=0 S6_FIX_ATTRS_HIDDEN=1 S6_KILL_FINISH_MAXTIME=10000 S6_VERBOSITY=1 NODE_ENV=production NPM_BUILD_VERSION=2.10.4 NPM_BUILD_COMMIT=1c498f8 NPM_BUILD_DATE=2024-01-08 00:21:20 UTC",
+                "comment": "buildkit.dockerfile.v0",
+                "empty_layer": true
+            },
+            {
+                "created": "2024-01-08T00:23:18.037537478Z",
+                "created_by": "RUN |4 TARGETPLATFORM=linux/amd64 BUILD_VERSION=2.10.4 BUILD_COMMIT=1c498f8 BUILD_DATE=2024-01-08 00:21:20 UTC /bin/bash -o pipefail -c echo \"fs.file-max = 65535\" \u003e /etc/sysctl.conf \t\u0026\u0026 apt-get update \t\u0026\u0026 apt-get install -y --no-install-recommends jq logrotate \t\u0026\u0026 apt-get clean \t\u0026\u0026 rm -rf /var/lib/apt/lists/* # buildkit",
+                "comment": "buildkit.dockerfile.v0"
+            },
+            {
+                "created": "2024-01-08T00:23:18.053005342Z",
+                "created_by": "COPY docker/scripts/install-s6 /tmp/install-s6 # buildkit",
+                "comment": "buildkit.dockerfile.v0"
+            },
+            {
+                "created": "2024-01-08T00:23:20.749073657Z",
+                "created_by": "RUN |4 TARGETPLATFORM=linux/amd64 BUILD_VERSION=2.10.4 BUILD_COMMIT=1c498f8 BUILD_DATE=2024-01-08 00:21:20 UTC /bin/bash -o pipefail -c /tmp/install-s6 \"${TARGETPLATFORM}\" \u0026\u0026 rm -f /tmp/install-s6 # buildkit",
+                "comment": "buildkit.dockerfile.v0"
+            },
+            {
+                "created": "2024-01-08T00:23:20.749073657Z",
+                "created_by": "EXPOSE map[443/tcp:{} 80/tcp:{} 81/tcp:{}]",
+                "comment": "buildkit.dockerfile.v0",
+                "empty_layer": true
+            },
+            {
+                "created": "2024-01-08T00:23:20.780982836Z",
+                "created_by": "COPY backend /app # buildkit",
+                "comment": "buildkit.dockerfile.v0"
+            },
+            {
+                "created": "2024-01-08T00:23:20.812962494Z",
+                "created_by": "COPY frontend/dist /app/frontend # buildkit",
+                "comment": "buildkit.dockerfile.v0"
+            },
+            {
+                "created": "2024-01-08T00:23:21.25709941Z",
+                "created_by": "COPY global /app/global # buildkit",
+                "comment": "buildkit.dockerfile.v0"
+            },
+            {
+                "created": "2024-01-08T00:23:21.267796141Z",
+                "created_by": "WORKDIR /app",
+                "comment": "buildkit.dockerfile.v0"
+            },
+            {
+                "created": "2024-01-08T00:23:31.118637807Z",
+                "created_by": "RUN |4 TARGETPLATFORM=linux/amd64 BUILD_VERSION=2.10.4 BUILD_COMMIT=1c498f8 BUILD_DATE=2024-01-08 00:21:20 UTC /bin/bash -o pipefail -c yarn install \t\u0026\u0026 yarn cache clean # buildkit",
+                "comment": "buildkit.dockerfile.v0"
+            },
+            {
+                "created": "2024-01-08T00:23:31.170933728Z",
+                "created_by": "COPY docker/rootfs / # buildkit",
+                "comment": "buildkit.dockerfile.v0"
+            },
+            {
+                "created": "2024-01-08T00:23:32.860034571Z",
+                "created_by": "RUN |4 TARGETPLATFORM=linux/amd64 BUILD_VERSION=2.10.4 BUILD_COMMIT=1c498f8 BUILD_DATE=2024-01-08 00:21:20 UTC /bin/bash -o pipefail -c rm -rf /etc/s6-overlay/s6-rc.d/user/contents.d/frontend /etc/nginx/conf.d/dev.conf \t\u0026\u0026 chmod 644 /etc/logrotate.d/nginx-proxy-manager \t\u0026\u0026 pip uninstall --yes setuptools \t\u0026\u0026 pip install --no-cache-dir \"setuptools==58.0.0\" # buildkit",
+                "comment": "buildkit.dockerfile.v0"
+            },
+            {
+                "created": "2024-01-08T00:23:32.860034571Z",
+                "created_by": "VOLUME [/data /etc/letsencrypt]",
+                "comment": "buildkit.dockerfile.v0",
+                "empty_layer": true
+            },
+            {
+                "created": "2024-01-08T00:23:32.860034571Z",
+                "created_by": "ENTRYPOINT [\"/init\"]",
+                "comment": "buildkit.dockerfile.v0",
+                "empty_layer": true
+            },
+            {
+                "created": "2024-01-08T00:23:32.860034571Z",
+                "created_by": "LABEL org.label-schema.schema-version=1.0 org.label-schema.license=MIT org.label-schema.name=nginx-proxy-manager org.label-schema.description=Docker container for managing Nginx proxy hosts with a simple, powerful interface  org.label-schema.url=https://github.com/jc21/nginx-proxy-manager org.label-schema.vcs-url=https://github.com/jc21/nginx-proxy-manager.git org.label-schema.cmd=docker run --rm -ti jc21/nginx-proxy-manager:latest",
+                "comment": "buildkit.dockerfile.v0",
+                "empty_layer": true
+            }
+        ],
+        "NamesHistory": [
+            "docker.io/jc21/nginx-proxy-manager:latest"
+        ]
+    }
+]
